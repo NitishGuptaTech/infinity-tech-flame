@@ -8,6 +8,7 @@ import About from './Components/pages/About';
 import Contact from './Components/pages/Contact';
 import Portfolio from './Components/pages/Portfolio';
 import Channel from './Components/pages/Channel';
+import Courses from './Components/pages/Courses';
 import '../src/styles/globals.css'
 const App = () => {
   return (
@@ -15,10 +16,12 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/channel" element={<Channel />} />
         <Route path="/about" element={<About />} />
+        
       </Routes>
       <Footer/>
     </Router>

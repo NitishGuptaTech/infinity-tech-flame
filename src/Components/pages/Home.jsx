@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 //import { FaArrowDown } from 'react-icons/fa';
 
 //  data for course cards
@@ -37,7 +38,8 @@ const Home = () => {
         <p className="text-lg font-semibold text-gray-700">Confused about your next course? Spark your future with the perfect path forward!</p>
         <p className="text-md text-gray-600 mt-2">
         Discover the perfect course for you—completely free! Infinity Tech Flame is dedicated to helping you master essential coding skills and techniques that took years to learn, now streamlined for fast, effective learning. </p>
-        <button className="mt-6 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-500 transition duration-300">View Recommended Courses</button>
+        <Link to="./Courses">
+        <button className="mt-6 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-500 transition duration-300">View Recommended Courses</button></Link>
       </div>
 
       {/* Recommended Courses Section */}
